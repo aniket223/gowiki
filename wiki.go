@@ -13,7 +13,7 @@ type Page struct { //struct of pages
 	Body  []byte
 }
 
-var templates = template.Must(template.ParseFiles("edit.html", "view.html"))
+var templates = template.Must(template.ParseFiles("edit.html", "view.html")) //direct method of parsing files
 
 func (p *Page) save() error { //function for saving pages
 	filename := p.Title + ".txt"
